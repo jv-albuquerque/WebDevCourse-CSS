@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Major Webpage - Divitions</title>
+		<title>Major Webpage - Floating</title>
 
 		<style type="text/css">
 			
@@ -14,7 +14,8 @@
 				color: blue;
 				font-weight: bold;
 				background-color: pink;
-				width: 500px
+				width: 500px;
+				float:right;
 			}
 
 			.Underline{
@@ -22,7 +23,13 @@
 			}
 
 			.Exercise{
-				background-color: yellow;
+				background-color: yellow;				
+				width: 500px;
+				float: left;
+			}
+
+			.clear-float{
+				clear: both;
 			}
 
 			#green {
@@ -46,6 +53,12 @@
 		<div class="Exercise">
 			<p>Exercise</p>
 			<p>Just to test</p>
+		</div>
+
+		<p> This paragraph is not floated </p>
+
+		<div class="clear-float">
+			<p> This paragraph will be undeneath the floated objects </p>
 		</div>
 
 	</body>
