@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Major Webpage - Margin</title>
+
+		<style type="text/css">
+			
+			.my-title{
+				color:purple;
+			}
+
+			.red {
+				color:red;
+			}
+
+			.large {
+				font-size: 200%;
+			}
+
+			#first-section{
+				color: blue;
+				background-color: green; 
+				width: 200px;
+				/* 
+					"margin" make a space of n pixels all around the object
+					.
+					margin: 100px => magin of 100 pixels all arounf
+					margin: 100px 50px => magin of 100px in the vertical and 50 pixels in the horizontal
+					margin: 10px 20px 30px 40px => 10px top - 20px right - 30px bottom - 40px left (round clockwise)
+					can use too:
+					margin-top // margin-left // margin-bottom // margin-top
+				 */
+				margin: 10px;
+
+			}
+
+			#second-section{
+				background-color: blue; 
+				width: 200px;
+				margin: 50px 20px;
+			}
+			
+		</style>
+
+	</head>
+	<body>
+		<h1 class="my-title">Major still rules</h1>
+
+		<div ID="first-section" class="large">
+
+			<p> using absolute position </p>
+
+		</div >
+
+		<div ID="second-section" class="red large">
+			<p>Using fixed position</p>
+			<p>Try to scroll the page</p>
+		</div>
+
+	</body>
+</html>
