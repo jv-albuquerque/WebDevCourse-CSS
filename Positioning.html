@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Major Webpage - Positioning</title>
+
+		<style type="text/css">
+			
+			.my-title{
+				color:purple;
+			}
+
+			.red {
+				color:red;
+			}
+
+			.large {
+				font-size: 200%;
+			}
+
+			#first-section{
+				color: blue;
+				background-color: green; 
+				width: 200px;
+				position: relative; /* need to use this to te functions "left", "top" ... works */
+				left: 100px; /* margin in the left size*/
+				top: 50px;
+				/* if something is overlapping others, with "z-index" we can control who will overlap who.
+				The highest index will apear in the front*/
+				z-index: 1;
+
+			}
+
+			#second-section{
+				background-color: blue; 
+				width: 200px;
+				position: relative;
+				z-index: 2;
+				/* "opacity" is the function to control opacity.
+				1 to completly opaque, 0 to completly transparent*/
+				opacity: 0.5; 
+			}
+			
+		</style>
+
+	</head>
+	<body>
+		<h1 class="my-title">Major still rules</h1>
+
+		<div ID="first-section" class="large">
+
+			<p> Using relative position </p>
+			<p> And the index will make this section stay behind the other </p>
+
+		</div >
+
+		<div ID="second-section" class="red large">
+			<p>using relative position</p>
+			<p>The index make this one stay in front the other section</p>
+			<p>The opacity is set to 0.5</p>
+		</div>
+
+	</body>
+</html>

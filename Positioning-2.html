@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Major Webpage - Positioning 2</title>
+
+		<style type="text/css">
+			
+			.my-title{
+				color:purple;
+			}
+
+			.red {
+				color:red;
+			}
+
+			.large {
+				font-size: 200%;
+			}
+
+			#first-section{
+				color: blue;
+				background-color: green; 
+				width: 200px;
+				height: 5000px;
+				/* "absolute" will make this part "invisible" to the others.
+				will make the other respect the function excluding this part*/
+				position: absolute;
+				left: 500px;
+				top: 200px;
+
+			}
+
+			#second-section{
+				background-color: blue; 
+				width: 200px;
+				/* "fixed" make this section to be fixed in the screen, 
+				independent how far the user scroll the page.
+				it can be used in menus the still apear in the top left of the screen.*/
+				position: fixed;
+			}
+			
+		</style>
+
+	</head>
+	<body>
+		<h1 class="my-title">Major still rules</h1>
+
+		<div ID="first-section" class="large">
+
+			<p> using absolute position </p>
+
+		</div >
+
+		<div ID="second-section" class="red large">
+			<p>Using fixed position</p>
+			<p>Try to scroll the page</p>
+		</div>
+
+	</body>
+</html>
