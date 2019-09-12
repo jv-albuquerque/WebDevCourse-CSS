@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Major Webpage - StylingText</title>
+
+		<style type="text/css">
+
+			
+
+			.bold{
+				font-weight: bold;
+			}
+
+			.italic{
+				font-style: italic;
+			}
+
+			.underlined{
+				text-decoration: underline; 
+			}
+
+			a {
+				/*
+					Here the default link properties is changed
+				*/
+				text-decoration: none;
+			}
+
+			a:hover{
+				text-decoration: underline;
+				color:green;
+			}
+
+			p{
+				font-size: 200%;
+			}
+
+		</style>
+
+	</head>
+	<body>
+		<h1>Major still rules</h1>
+
+		<p >This Text is normal</p>
+		<p class="bold">This Text is bold</p>
+		<p class="italic">This Text is italic <span class="bold">and this is bold and italic</span></p>
+		<p class="underlined">This Text is underlined</p>
+		<p><a href="">this link has no decoration</a></p>
+
+	</body>
+</html>
