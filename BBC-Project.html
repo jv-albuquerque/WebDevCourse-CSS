@@ -11,6 +11,21 @@
 				font-family: Helvetica, Arial, sans-serif;
 			}
 
+			h1 {
+				padding: 0;
+				margin: 0;
+				color: white;
+				font-size: 40px;
+				font-weight: normal;
+				padding-top: 10px;
+				float:left;
+			}
+
+
+			.clear{
+				clear: both;
+			}
+
 			#logo{
 				margin: 7px;
 				height: 26px;
@@ -77,8 +92,77 @@
 			}
 
 			#magnifier{
-				height: 25px;
+				height: 26px;
 				margin-top: 6px;
+			}
+
+			#menu-bar-container{
+				background-color: #BB1919;
+				border-top: 1px #CCCCCC solid;
+				width: 100%;
+				height: 70px;
+			}
+
+			#menu-bar{
+				width: 990px;
+				margin: 0 auto;
+				height: 40px;
+			}
+
+			#find-local-news{
+				float: right;				
+				margin-top: 15px;
+				margin-right: 40px;
+				border: 1px #BB4545 solid;
+				padding: 6px; 
+			}
+
+			#find-local-news a{
+				color: white;
+				text-decoration: none;
+				font-size: 20px;
+				position: relative;
+				top:-3px;
+			}
+
+			#find-local-news a:hover{
+				text-decoration: underline;
+			}
+
+			#menu-bar-2-container{
+				background-color: #A91717;
+				width: 100%;
+				height: 40px;
+			}
+
+			#menu-bar-2{
+				width: 1000px;
+				margin:0 auto;
+			}
+
+			#menu-bar-2 a {
+				color: white;
+				text-decoration: none;
+				padding:  0 7px;
+				border-right: 1px #BB4545 solid;
+				font-size: 16px;
+				position: relative;
+				top: 12px;
+
+			}
+
+			#menu-bar-2 a:hover{
+				text-decoration: underline;
+			}
+
+			.non-border{
+				border:none !important;
+			}
+
+			#down-arrow{
+				height: 5px;
+				position: relative;
+				top:10px;
 			}
 
 		</style>
@@ -124,7 +208,7 @@
 
 			<div class="topbar-section topbar-menu">
 				More
-				<img src="images/down-arrow.png" style="margin-left: 20px">
+				<img src="images/down-arrow.png" style="margin-left: 40px">
 			</div>
 
 			<div class="topbar-section">
@@ -132,6 +216,40 @@
 				<input type="image"  id="magnifier" src="images/magnifier.png">
 			</div>
 
+		</div>
+
+		<div class="clear"></div>
+
+		<div id="menu-bar-container">
+			<div id="menu-bar">
+
+				<div><h1>NEWS</h1></div>
+
+				<div id="find-local-news">
+					<a href="">Find local news</a>
+					<img height="25" src="images/pointer.png">
+				</div>
+			</div>
+		</div>
+
+		<div id="clear"></div>
+
+		<div id="menu-bar-2-container">
+			<div id="menu-bar-2">
+				<a href="">Home</a>
+				<a href="">UK</a>
+				<a href="">World</a>
+				<a href="">Business</a>
+				<a href="">Politics</a>
+				<a href="">Tech</a>
+				<a href="">Science</a>
+				<a href="">Health</a>
+				<a href="">Education</a>
+				<a href="">Entertaiment & Arts</a>
+				<a href="">Video & Audio</a>
+				<a class="non-border" href="">More</a>
+				<img id="down-arrow" src="images/red- down-arrow.png">
+			</div>
 		</div>
 
 	</body>
